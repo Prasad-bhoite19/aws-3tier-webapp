@@ -1,9 +1,11 @@
 # ☁️ Three-Tier Web Application (PHP + AWS EC2 + RDS)
 
 **Author:** Prasad
-**LinkedIn:** [linkedin.com/in/prasad-bhoite-a38a64223](#)
+
 **Project Type:** AWS Cloud | Three-Tier Architecture
+
 **Version:** 1.0
+
 **License:** MIT
 
 ---
