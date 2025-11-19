@@ -189,11 +189,15 @@ three-tier-app/
 ---
 ## 📸 Screenshots :-
 
+Here are the key screenshots for the project:
 
-Frontend form hosted on Web EC2
-
-
-Data successfully inserted into RD
+| Screenshot Name | Description |
+|-----------------|-------------|
+| Form.html Page.png | Screenshot of the `Form.html` page |
+| IGW Entry.png | Screenshot showing the IGW (Internet Gateway) entry configuration |
+| Nat Gateway Entry.png | Screenshot showing the NAT Gateway entry configuration |
+| Stored Data.png | Screenshot showing stored data in the system |
+| submit.php Page.png | Screenshot of the `submit.php` page |
 
 ## 🏆 Achievements :-
 
