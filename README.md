@@ -8,12 +8,12 @@
 
 ---
 
-## 🧭 Project Summary
+## 🧭 Project Summary :-
 
 This project showcases a **Three-Tier Cloud Architecture** built using **AWS EC2 (Ubuntu)** and **RDS MySQL**.
 It separates the application into **Presentation**, **Application**, and **Database** layers to achieve **scalability, security, and modularity**.
 
-### Architecture Overview
+### Architecture Overview :-
 
 * 🖥️ **Tier 1 – Web Tier:**
   Hosts the frontend on an **EC2 (Ubuntu)** instance with **Nginx** serving the HTML interface.
@@ -26,23 +26,23 @@ It separates the application into **Presentation**, **Application**, and **Datab
 
 ---
 
-## 🔄 Data Flow Summary
+## 🔄 Data Flow Summary :-
 
 **User (Web Tier)** → **PHP Logic (App Tier)** → **Database Insert (RDS)** → **Response Sent Back to User**
 
 ---
 
-## 💡 Key Highlights
+## 💡 Key Highlights :-
 
-✅ Secure communication between all tiers using AWS Security Groups
-✅ Modular design for easy scaling and maintenance
-✅ Real-world **3-Tier architecture** used in enterprise applications
-✅ Simple setup with clear separation of frontend, backend, and database
-✅ Beginner to intermediate-level project for **Cloud & DevOps** learners
+* ✅ Secure communication between all tiers using AWS Security Groups
+* ✅ Modular design for easy scaling and maintenance
+* ✅ Real-world **3-Tier architecture** used in enterprise applications
+* ✅ Simple setup with clear separation of frontend, backend, and database
+* ✅ Beginner to intermediate-level project for **Cloud & DevOps** learners
 
 ---
 
-## 🧠 Learning Outcomes
+## 🧠 Learning Outcomes :-
 
 * Understood **3-Tier Architecture** and its practical implementation on AWS
 * Gained experience deploying apps across **multiple EC2 instances**
@@ -52,11 +52,12 @@ It separates the application into **Presentation**, **Application**, and **Datab
 
 ---
 
-## 🧱 Application Overview
+## 🧱 Application Overview :-
 
 Users interact with a **frontend form (Web Tier)** that sends data to a **PHP backend (App Tier)**, which then stores it in an **RDS MySQL database (DB Tier)**.
 
-### Core Components
+---
+### Core Components :-
 
 | Tier         | Component       | Description                                    |
 | ------------ | --------------- | ---------------------------------------------- |
@@ -66,7 +67,7 @@ Users interact with a **frontend form (Web Tier)** that sends data to a **PHP ba
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder Structure :-
 
 ```
 three-tier-app/
@@ -84,7 +85,7 @@ three-tier-app/
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack :-
 
 * **Frontend:** HTML
 * **Backend:** PHP
@@ -95,20 +96,20 @@ three-tier-app/
 
 ---
 
-## ⚙️ AWS Setup Summary
+## ⚙️ AWS Setup Summary :-
 
-### 🧩 EC2 Instances
+### 🧩 EC2 Instances :-
 
 * **Web Server EC2:** Hosts frontend (`form.html`)
 * **App Server EC2:** Hosts backend (`submit.php`) and connects to RDS
 * Use **Ubuntu 22.04** AMI for both instances
 
-### 💾 RDS (MySQL)
+### 💾 RDS (MySQL) :-
 
 * Create **RDS MySQL** instance with public accessibility *disabled*
 * Connect using private endpoint from **App EC2**
 
-### 🔒 Security Groups
+### 🔒 Security Groups :-
 
 | Component | Inbound Rules                                       | Outbound Rules |
 | --------- | --------------------------------------------------- | -------------- |
@@ -118,7 +119,7 @@ three-tier-app/
 
 ---
 
-## 🚀 Deployment Steps
+## 🚀 Deployment Steps :-
 
 1. **Launch EC2 Instances:**
 
@@ -156,8 +157,26 @@ three-tier-app/
 
 
 ---
+## 💡 Notes & Tips :-
 
-## 🌱 Future Enhancements
+* Restrict RDS access to App EC2 only.  
+* Use private subnets for backend and DB.  
+* Backup RDS regularly.  
+* Test EC2 → RDS connectivity (`telnet <RDS-endpoint> 3306`).  
+* Keep OS and PHP updated.  
+* Store credentials securely (env vars or Secrets Manager).  
+* Add logging/monitoring with CloudWatch.  
+* Document architecture with diagrams.
+
+  
+## 💡 Core Concept :-
+
+* **Three-Tier Separation:** Web, App, and Database layers are isolated.  
+* **Secure Communication:** Only App EC2 can access RDS.  
+* **Scalability:** Web and App tiers can be scaled independently.  
+* **Modularity:** Easy maintenance and upgrades without affecting other tiers.  
+
+## 🌱 Future Enhancements :-
 
 * Add CSS and JS for better frontend design
 * Implement **Load Balancer (ALB)** between Web and App tiers
@@ -166,16 +185,29 @@ three-tier-app/
 * Deploy using **Terraform or CloudFormation** for automation
 
 ---
+## 📸 Screenshots :-
 
-## 🏁 Conclusion
+
+Frontend form hosted on Web EC2
+
+
+Data successfully inserted into RD
+
+## 🏆 Achievements :-
+
+* Successfully implemented secure 3-Tier AWS Architecture
+* Deployed real PHP application across multiple EC2 instances
+* Connected backend securely to AWS RDS MySQL
+* Gained hands-on experience with cloud networking and security groups
+
+## 🏁 Conclusion :-
 
 This project demonstrates how a **Three-Tier Web Application** can be deployed on **AWS** using **EC2 and RDS** with a secure, scalable architecture.
 It provides a **solid foundation for Cloud & DevOps learners** to understand how real-world applications are designed, deployed, and scaled in the cloud environment.
 
 ---
 
-**👤 Author:** Prasad
-
-**LinkedIn:** [linkedin.com/in/prasad-bhoite-a38a64223](#)
+**👤 Author :-** 
+Prasad
 
 **License:** MIT
